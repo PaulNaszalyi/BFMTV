@@ -7,8 +7,6 @@ const Image = styled.img`
   margin: 15px;
 `
 
-
-
 const Icon = ({
     file = user
 }) => {
