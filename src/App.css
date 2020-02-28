@@ -1,3 +1,13 @@
+body, html, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f6f6f6;
+  margin-top: 80px;
+}
+
 .App {
   text-align: center;
 }
