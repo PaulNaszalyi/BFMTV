@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import Icon from './icon'
-import icon from '../assets/Logo.png'
 import tv from '../assets/screen.png'
 import audio from '../assets/headphones.png'
 import menu from '../assets/menu.png'
+import Logo from "./logo"
 
 const Header = styled.div`
   width: 100%;
@@ -15,24 +15,16 @@ const Header = styled.div`
   left: 0;
 `
 
-const Logo = styled.img`
-  width: 60px;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%);
-`
-
 const Bar = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
 `
 
-const Navbar = () => {
+const Navbar_home = () => {
     return (
         <Header>
-            <Logo src={icon}/>
+            <Logo />
             <Bar>
                 <Icon file={menu} small/>
                 <div>
@@ -44,4 +36,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar_home

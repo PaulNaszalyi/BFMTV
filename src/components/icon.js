@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import user from '../assets/user.png'
+import { useHistory } from "react-router-dom"
 
 const Image = styled.img`
   width: 25px;
@@ -8,11 +9,15 @@ const Image = styled.img`
 `
 
 const Icon = ({
-    file = user
+    file = user,
+    onclick = false
 }) => {
-    return (
-        <Image src={file} alt='icon'/>
-    )
+    const history = useHistory()
+    if(onclick)
+        return <Image src={file} alt='icon' onClick={() => history.push("/")}/>
+    else
+        return <Image src={file} alt='icon'/>
+
 }
 
 export default Icon

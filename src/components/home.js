@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from "./navbar"
+import Navbar from "./navbar_home"
 import Article from "./article"
 import New from '../components/new'
 import styled from "styled-components"
@@ -37,7 +37,7 @@ const Home = () => {
 
             {articles.map(article => {
                 return (
-                    <Article key={article.id} image={article.image} content={article.content} />
+                    <Article key={article.id} id={article.id} image={article.image} title={article.title} />
                 )
             })}
 
@@ -46,7 +46,7 @@ const Home = () => {
                 <ScrollContainer>
                     {news.map(res => {
                         return (
-                            <New time={res.time} content={res.content}/>
+                            <New key={res.id} time={res.time} content={res.content}/>
                         )
                     })}
                 </ScrollContainer>

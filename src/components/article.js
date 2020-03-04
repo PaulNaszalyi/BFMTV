@@ -19,14 +19,23 @@ const Paragraph = styled.p`
   padding: 10px;
 `
 
+const Link = styled.a`
+  text-decoration: none;
+  color: #000;
+  outline: none;
+`
+
 const Article = ({
+    id = '',
     image = '',
-    content = ''
+    title = ''
 }) => {
     return (
         <Container>
-            <Paragraph>{content}</Paragraph>
-            <Image src={image} alt='' />
+            <Link href={`/article/${id}`}>
+                <Paragraph>{title}</Paragraph>
+                <Image src={image} alt='' />
+            </Link>
         </Container>
     )
 }

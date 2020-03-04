@@ -1,22 +1,26 @@
 [
   {
     "id": 0,
-    "content": "Box-office aux États-Unis : Bad Boys reste en tête",
+    "title": "Box-office aux États-Unis : Bad Boys reste en tête",
+    "content": "Will Smith / Martin Lawrence sont plus que jamais des Bad Boys For Life ! Leur troisième long métrage dans les bottes de Mike et Marcus se maintient bien pour sa deuxième semaine d'exploitation et reste en tête, toujours talonné par 1917 qui résiste, poussé par ses nominations aux Oscars.",
     "image": "https://www.ocs.fr/sites/default/files/styles/mobile/public/contest/headerbadboy4life.jpg?itok=4_pDMPvO"
   },
   {
     "id": 1,
-    "content": "Le nouveau morceau de Justin Timberlake casse déjà Internet",
+    "title": "Le nouveau morceau de Justin Timberlake casse déjà Internet",
+    "content": "C'est donc le clip The Other Side que l'on peut découvrir, quatre ans après le titre Can’t Stop the Feeling de Justin Timberlake pour le premier volet de Trolls. Ce nouveau clip, en duo avec SZA cette fois-ci, révèle les deux artistes dans une ambiance disco/funk très festive. Ils dansent dans ce qui semble être une énorme boule disco, atmosphère années 90 garantie. À un certain moment de la vidéo, on voit même SZA tomber au sol avec le sourire, en toute détente, un petit plus qui prête à sourire. ",
     "image": "https://media.melty.fr/article-4096502-facebook-f10/justin-timberlake-sza-teaser-the-other-side.jpg"
   },
   {
     "id": 2,
-    "content": "F1 ESSAIS – BOTTAS CONFIRME, VERSTAPPEN ET RICCIARDO SIGNENT LES DEUXIÈME ET TROISIÈME CHRONOS DU JOUR",
+    "title": "F1 ESSAIS – BOTTAS CONFIRME, VERSTAPPEN ET RICCIARDO SIGNENT LES DEUXIÈME ET TROISIÈME CHRONOS DU JOUR",
+    "content": "Bottas, qui a signé le meilleur temps des essais dans leur ensemble (le troisième jour) en 1.15.732, a continué sur sa bonne lancée ce vendredi, pour le dernier jour des essais de pré-saison, en décrochant le meilleur chrono du jour : 1.16.196.",
     "image": "https://sf2.viepratique.fr/wp-content/uploads/sites/17/2020/02/xpb_1037890_1200px-750x410.jpg"
   },
   {
     "id": 3,
-    "content": "La Slovaquie aux urnes pour changer d'ère politique",
+    "title": "La Slovaquie aux urnes pour changer d'ère politique",
+    "content": "À l’heure où les bureaux se vident, un attroupement se dessine place de l’Insurrection, au cœur de Bratislava, près d’un homme que chacun connaît depuis des années, le député Igor Matovic du parti Ol’ano (Les gens ordinaires et personnalités indépendantes), favori aux législatives de samedi.",
     "image": "https://thumbs.dreamstime.com/b/%C3%A9lection-en-slovaquie-votant-%C3%A0-l-urne-78769356.jpg"
   }
 ]

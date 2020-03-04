@@ -2,45 +2,20 @@ import React from 'react'
 import {
   Route,
   Switch,
-  Redirect,
   BrowserRouter as Router
 } from 'react-router-dom'
 import Home from '../components/home'
+import Article from '../components/page_article'
 
-const routing = (...props) => {
-  const token = !!localStorage.getItem('token')
-
-  const PrivateRoute = ({ component: Component, ...props }) => {
-    return (
-      <Route
-        {...props}
-        render={innerProps =>
-          token ? <Component {...innerProps} /> : <Redirect to='/'/>
-        }
-      />
-    )
-  }
-
-  const PublicRoute = ({ component: Component, ...props }) => {
-    return (
-      <Route
-        {...props}
-        render={innerProps =>
-          token ? <Redirect to='/characters' /> : <Component {...innerProps} />
-        }
-      />
-    )
-  }
-
+const Routing = () => {
   return (
     <Router>
-      <div>
-        <Switch>
-          <Route exact path='/' component={Home} />
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/article/:id' component={Article} />
+      </Switch>
     </Router>
   )
 }
 
-export default routing
+export default Routing
