@@ -3,7 +3,6 @@ import Navbar from "./navbar_home"
 import Article from "./article"
 import New from '../components/new'
 import styled from "styled-components"
-import articles from '../assets/articles'
 import news from '../assets/news'
 
 const ContainerNews = styled.div`
@@ -34,8 +33,7 @@ const Home = () => {
     return (
         <div>
             <Navbar/>
-
-            {articles.map(article => {
+            {JSON.parse(localStorage.getItem('articles')).map(article => {
                 return (
                     <Article key={article.id} id={article.id} image={article.image} title={article.title} />
                 )
