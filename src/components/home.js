@@ -4,6 +4,7 @@ import Article from "./article"
 import New from '../components/new'
 import styled from "styled-components"
 import news from '../assets/news'
+import articles from '../assets/articles'
 
 const ContainerNews = styled.div`
   width: 94vw;
@@ -30,6 +31,16 @@ const TitleNews = styled.h2`
 `
 
 const Home = () => {
+    //On met le contenu de articles.json dans le localStorage
+    if(!localStorage.getItem('articles')) {
+        let local = []
+        Object.keys(articles).forEach(key => {
+            if(localStorage.getItem('articles')) local = JSON.parse(localStorage.getItem('articles'))
+            local.push(articles[key])
+            localStorage.setItem('articles', JSON.stringify(local))
+        })
+    }
+
     return (
         <div>
             <Navbar/>
@@ -38,7 +49,6 @@ const Home = () => {
                     <Article key={article.id} id={article.id} image={article.image} title={article.title} />
                 )
             })}
-
             <ContainerNews>
                 <TitleNews>News 24/7</TitleNews>
                 <ScrollContainer>

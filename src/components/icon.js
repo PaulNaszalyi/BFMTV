@@ -10,11 +10,14 @@ const Image = styled.img`
 
 const Icon = ({
     file = user,
-    onclick = false
+    back = false,
+    plus = false
 }) => {
     const history = useHistory()
-    if(onclick)
+    if(back)
         return <Image src={file} alt='icon' onClick={() => history.push("/")}/>
+    else if(plus)
+        return <Image src={file} alt='icon' onClick={() => history.push("/new-article")}/>
     else
         return <Image src={file} alt='icon'/>
 

@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
         <Header>
             <Logo />
-            <Icon file={arrow} small onclick={true}/>
+            <Icon file={arrow} back/>
         </Header>
     )
 }

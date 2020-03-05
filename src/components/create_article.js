@@ -51,23 +51,20 @@ const CreateArticle = () => {
     const history = useHistory()
 
     const onSubmit = values => {
-        let articles = [{}]
+        let articles = []
         let id = 0
         if(localStorage.getItem('articles')) {
             articles = JSON.parse(localStorage.getItem('articles'))
             id = articles.length
         }
-        var today = new Date()
-        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()
 
         values.id = id
-        values.date = date
         articles.push(values)
         localStorage.setItem('articles', JSON.stringify(articles))
 
         Swal.fire(
             'Ma3lm sahbi !',
-            'Création réussie',
+            'Création de l\'article réussie !',
             'success'
         )
 
@@ -84,7 +81,7 @@ const CreateArticle = () => {
                         required: 'Le champ image est requis'
                     })}/>
                 </label>
-                {errors.image && errors.image.message}
+                {errors.image}
 
                 <br /><br />
 
@@ -93,7 +90,7 @@ const CreateArticle = () => {
                         required: 'Le champ titre est requis'
                     })}/>
                 </label>
-                {errors.title && errors.title.message}
+                {errors.title}
 
                 <br /><br />
 
@@ -102,7 +99,7 @@ const CreateArticle = () => {
                         required: 'Le champ contenu est requis'
                     })}/>
                 </label>
-                {errors.content && errors.content.message}
+                {errors.content}
 
                 <br /><br />
 

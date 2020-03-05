@@ -5,7 +5,6 @@ import tv from '../assets/screen.png'
 import audio from '../assets/headphones.png'
 import plus from '../assets/plus.png'
 import Logo from "./logo"
-import { useHistory } from 'react-router-dom'
 
 const Header = styled.div`
   width: 100%;
@@ -23,13 +22,12 @@ const Bar = styled.div`
 `
 
 const Navbar_home = () => {
-    const history = useHistory()
 
     return (
         <Header>
             <Logo />
             <Bar>
-                <Icon file={plus} small onClick={() => history.push('/new-article')}/>
+                <Icon file={plus} plus/>
                 <div>
                     <Icon file={tv} />
                     <Icon file={audio} />
